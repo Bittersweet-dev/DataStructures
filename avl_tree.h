@@ -31,7 +31,7 @@ public:
 			// 재귀적으로 왼쪽 혹은 오른쪽으로 검색합니다. 
 			int left = GetHeight(pNode->l);
 			int right = GetHeight(pNode->r);
-			int maxHeight = left < right ? left : right;
+			int maxHeight = left > right ? left : right;
 			h = maxHeight + 1;
 		}
 		return h;
